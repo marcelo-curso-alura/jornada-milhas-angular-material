@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button';
+
+import { HeaderComponent } from "./header/header.component";
+import { BannerComponent } from "./banner/banner.component";
+import { FormBuscaPassagensComponent } from "./form-busca-passagens/form-busca-passagens.component";
 
 @Component({
   selector: 'app-root',
-  imports: [MatButtonModule],
+  imports: [HeaderComponent, BannerComponent, FormBuscaPassagensComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
